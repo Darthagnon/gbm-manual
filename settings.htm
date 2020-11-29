@@ -1,0 +1,118 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>5. Settings</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+html,body { 
+	/* Default Font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="pageSection">
+          <div class="pageSectionHeader">
+            <a name="settings" id="settings">Settings</a>
+          </div>
+          <div class="pageSectionContent">
+            <p>The Settings screen can be found in the File menu.</p>
+            <p>On this screen you can change core settings like your backup folder, or tweak a variety of minor settings to customize your experience.</p>
+            <p>Choose a category of settings by using the list panel on the left side of the window.</p>
+            <p>The "Set Defaults" button will revert ALL settings to their default.</p>
+            <p>The "Reset Warnings" button will reset all one-time warnings or messages that have been hidden.  You need to click "Save" after using this button for it to take effect.</p>
+            <p>Clicking Cancel or closing the window will cancel any changes made on this screen.</p>
+            <p>When modifying the backup folder or any sync settings, be sure to read any warning messages carefully.</p>
+            <h3>General</h3>
+            <IMG class=manual alt=Settings src   ="./GBM_files/manual_15.jpg" width=556 height=388 >            
+            <h4>Enable time tracking:</h4>
+            <p>GBM will record and display game session times when this is enabled. When it's disabled no time data is recorded or displayed. Toggling this setting has no effect on time data that's already been recorded.</p>
+            <h4>Enable session tracking:</h4>
+            <p>When enabled, GBM will record individual session data and make the "Session Viewer..." available from the Tools menu.  Toggling this setting has no effect on session data that's already been recorded.</p>
+            <h4>Enable game launching:</h4>
+            <p>When enabled, all features related to <A href="faqlauncher.htm">launching games</a> from GBM become available.  This includes the "Launcher Manager", "Quick Launcher", "Launch Options" on the Game Manager, and the recently played tray menu options.  The "Session Tracking" feature needs to be enabled and have enough recorded data to display any recently played games in the system tray menu.</p>
+            <h4>Show resolved save paths in Game Manager:</h4>
+            <p>When enabled, GBM will display save paths resolved to the location on the current system, such as "C:\Users\User1\Saved Games\kingdomcome\saves".  When disabled, GBM will display save paths with environment variables when applicable,  such as "%USERPROFILE%\Saved Games\kingdomcome\saves".  Save Path fields on the Game Manager will display a tooltip with the resolved path or unresolved path depending on this setting.  
+            </p><h4>Choose Optional Fields:</h4>
+            <p>Use this button to choose any extra data you'd like to keep in sync between computers.  Fields such as Game Path and Icon are not recommended because they may be different on each PC.</p>
+            <h4>Ignore sessions shorter than X minutes:</h4>
+            <p>GBM can suppress backups if a session time is too short. This is useful to prevent unwanted backups just because you loaded a game for a few minutes. If session tracking is enabled, it will use this setting and ignore short sessions.</p>
+            <h4>Show detection notifications:</h4>
+            <p>This will require GBM to show a standard Windows notification when a game is detected.</p>
+            <h4>Disable sync event messages</h4>
+            <p>This will prevent all sync related messages from being displayed in the log.</p>
+            <h4>Autosave log when max length is exceeded</h4>
+            <p>This will automatically save a copy of the session log each time it's automatically cleared.</p>            
+            <h3>Backup and Restore</h3>
+            <IMG class=manual alt=Settings src   ="./GBM_files/manual_17.jpg" width=556 height=388 >
+            <h4>Backup Folder:</h4>
+            <p>This is the backup folder where GBM stores all game backups and it's remote database.</p>
+            <h4>Temp Folder:</h4>
+            <p>This is the temporary folder that GBM uses to process backup files before they are moved to the Backup Folder.</p>
+            <h4>Create a sub-folder for each game:</h4>
+            <p>This indicates if you want GBM to create a sub-folder in the backup folder for each game. This is handy for keeping your backup folder more organized.</p>
+            <h4>Use Game ID for folder and file names:</h4>
+            <p>GBM uses the game Name by default for folder and files names.  After enabling this setting GBM will use the game ID instead.</p>
+            <h4>Display notifications about new backups:</h4>
+            <p>This indicates if you want GBM to display notifications when new backups are detected or restored.<br><br>These notifications are presented differently depending on your other settings:
+				    </p><ul>
+					    <li>When automatically restoring new backup files, 
+  standard Windows notifications are used. These notifications are not stored in 
+  the action center when using Windows 10, this is a known issue that may be 
+  addressed in a future release. 
+					    <li>When manually handling new backup files, a small notification will appear on the menu bar and GBM system tray menu.  Clicking this notification will take you directly to the Game Manager, where you can restore your backups as you see fit.</li>
+				    </ul>
+			      <p></p>
+            <h4>Automatically restore new backups:</h4>
+            <p>This indicates if GBM will automatically restore new backup files when they are detected.  GBM will automatically restore backup files only if the save folder for the game currently exists.</p>
+            <p>When using cloud software (such as Dropbox) it's possible that the new backup file won't be ready to restore at the time it's detected.  GBM will check once every minute and restore the backup once it's ready, after 15 minutes this operation will time out.</p>
+            <h4>Automatically mark new backups as restored when appropriate:</h4>
+            <p>This indicates if GBM will automatically mark a new backup as restored when the save folder for the game doesn't exist.  This should be used when you don't want to see pending backups for games that aren't currently installed.</p>
+            <h4>Disable backup confirmation:</h4>
+            <p>This will stop GBM from showing a backup confirmation after each game session.</p>
+            <h4>Disable disk space check prior to backup:</h4>
+            <p>This will stop GBM from checking if enough disk space is available before performing a backup.  Disabling this option can solve issues with certain backup configurations, as well as speed up the backup process in general.
+            </p><h4>Show overwrite warning:</h4>
+            <p>This will require GBM to show a confirmation before overwriting any backup file.</p>
+            <h3>Startup</h3>        
+            <IMG class=manual alt=Settings src   ="./GBM_files/manual_23.jpg" width   =556 height=388 >
+            <h4>Start automatically on log-in:</h4>
+            <p>This indicates if you want GBM to start automatically when you log-in. This setting applies to the current user only.</p>
+            <p>In Windows, this setting will not function correctly if GBM is flagged to "Run as Administrator".  If you'd like to automatically start GBM as administrator you need to disable this setting and use the <b>Windows Task Scheduler</b>.  Please <a href="gbm_task_scheduler.htm">follow these instructions</a> to setup a task for Game Backup Monitor.</p>
+            <h4>Start minimized:</h4>
+            <p>This makes GBM automatically hidden when it starts, instead of showing the main window. Recommended if you're using the "Start automatically on log-in" setting.</p>
+            <h4>Start monitoring at launch:</h4>
+            <p>GBM will start detecting games immediately with this setting enabled, otherwise game detection has to be manually started each time you load GBM.</p>            
+            <h4>Backup GBM data files on launch:</h4>
+            <p>GBM will backup both local and remote data files (as gbm.s3db.launch.bak) each time the application starts.  Only one backup file is kept, the prior one will be overwritten.</p>
+            <h4>Exit when closing main window:</h4>
+            <p>This indicates if you'd like to shut down GBM completely when closing the main window, instead of hiding it to the system tray or taskbar.</p>
+            <h4>Exit without confirmation:</h4>
+            <p>This will disable the confirmation when shutting down GBM.</p>
+            <h3>7-Zip</h3>
+            <IMG class=manual alt=Settings src   ="./GBM_files/manual_18.jpg" width   =556 height=388 >
+            <h4>Compression:</h4>
+            <p>This allows you to set the compression level of your backups. The default is Normal. Ultra is highly recommended if you're using a modern PC.</p>
+            <h4>Custom Arguments:</h4>
+            <p>This is an advanced feature that allows you to add custom arguments to GBM's 7za commands.</p>
+            <p>For example, you could add the argument "-bb1" to make 7-Zip more verbose in the session log.</p>
+            <p>Please review any available 7za documentation before adding your own arguments.</p>
+            <p class="bold">This feature should be used with caution as some arguments will interfere with the normal usage of GBM.</p>            
+            <h4>Custom Location:</h4>
+            <p>This setting allows the use of a custom version of 7-Zip Console (7za).</p>
+            <p>When left blank the default version of 7za will be used.</p>            
+            <h4>Version Information:</h4>
+            <p>This shows the product name, version and copyright information of the 7-Zip utility currently being used by GBM.  This information is not available in Linux.</p>
+          </div>
+          <div class="pageSectionFooter">
+            <a href="manual.htm">Back to Contents</a>
+          </div>
+        </div>
+
+</body>
+</html>
