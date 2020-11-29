@@ -1,0 +1,61 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>15. Automatic Syncing</title>
+<meta name="GENERATOR" content="WinCHM">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style>
+html,body { 
+	/* Default Font */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11pt;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="pageSection">
+          <div class="pageSectionHeader">
+            <a name="syncing" id="syncing">Automatic Syncing</a>
+          </div>
+          <div class="pageSectionContent">
+            <p>GBM will sync some data between computers that share the same backup folder.</p>
+            <p>All computers are synced to a single master list stored in the backup folder.</p>
+            <p>This allows all computers with GBM to use the same game list.</p>
+            <h4>When does GBM sync data?</h4>
+            <ul>                            
+              <li>A sync from master to local occurs when GBM is 
+  loaded, and any time GBM detects another application has changed the master 
+  list. 
+              <li>A sync from local to the master occurs when any applicable data has been added or updated.</li>              
+            </ul>
+            <h4>What data is synced?</h4>
+            <ul>
+              <li>Game Configurations 
+              <li>Game Configuration Links 
+              <li>Tags</li>              
+            </ul>
+            <h4>What data is not synced?</h4>
+            <ul>
+              <li>Sessions 
+              <li>Processes              
+              <li>Launchers 
+              <li>Launch Settings              
+              <li>Wine Configuration (Linux Only)</li>
+            </ul>
+            <h4>What happens when I delete a game configuration?</h4>
+            <p>It will be deleted from all PCs that share the same backup folder.  Any associated extra data, such as sessions will also be removed.</p>
+            <h4>Are there any other issues with syncing?</h4>
+            <p>If the ID of a game is changed, either via the "Game Manager" or the "Sync Game IDs" tool, it has the same effect as deleting and re-adding it.</p>
+            <p>This means other PCs sharing the backup folder will delete extra data associated with any game that has their ID changed.</p>
+            <p>This does NOT affect the PC that actually makes the ID change.</p>
+          </div>
+          <div class="pageSectionFooter">
+            <a href="manual.htm">Back to Contents</a>
+          </div>
+        </div>
+
+</body>
+</html>
