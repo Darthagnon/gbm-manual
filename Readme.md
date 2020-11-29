@@ -25,7 +25,8 @@ It has grown in features over the years, and I saw a need for offline documentat
 	-  [Wine F.A.Q](http://mikemaximus.github.io/gbm-web/wine.html)
 
 2. I used [WinCHM Pro](http://www.softany.com/winchm/) to reconstruct the HTML. Mirror available here (Base64):
-``` aHR0cHM6Ly9scmVwYWNrcy5ydS9yZXBha2ktcmF6bnloLXByb2dyYW1tLzQ4MC13aW5jaG0tcHJvLXJlcGFjay1hbXAtcG9ydGFibGUuaHRtbA==
+``` 
+aHR0cHM6Ly9scmVwYWNrcy5ydS9yZXBha2ktcmF6bnloLXByb2dyYW1tLzQ4MC13aW5jaG0tcHJvLXJlcGFjay1hbXAtcG9ydGFibGUuaHRtbA==
 ```
 
 3. All image resources were saved to ```\GBM_files\```
